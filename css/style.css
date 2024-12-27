@@ -1,57 +1,7 @@
-*{
-    margin:0%;
-    padding:0%;
-}
 body{
     overflow-x: hidden;
 }
-/* responsive */
-@media (max-width:576px) {
-    nav ul li{ 
-        display: none; 
-    }
-    .p-one-txt-one>p{
-        text-align: center;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        transition: 1s;
-    }
-    .p-one-txt-two ul{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    .p-two,p-two-first,p-two-second{
-        height:50% !important;
-        width:200% !important;
-        flex-direction:column;
-    }
-    .p-two-first-text h1{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        transition: 1s;
-    }
-}
-@media (max-width:768px){
-    .p-four-first .image{ 
-        padding-left: 0% !important;
-    }
-}
 
-
-@media (min-width:576px) {
-    .custom-drop .custom-drop-btn{ 
-
-        display: none; 
-
-    }
-}
-@media (min-width:900px){
-    .cards{
-        grid-template-columns: 1fr 2fr 1fr;
-        column-gap: 1.5rem;
-    }
-    
-}
 /* Page one content LINKS*/
 .p-one{
     background-image: url(../Images/1.jpg);
@@ -140,7 +90,7 @@ nav ul li a:hover{
 }
 /* Page two content */
 .p-two{
-    background:rgb(0, 0, 0);
+/*     background:rgb(0, 0, 0); */
     background-size:cover;
     background-repeat: no-repeat;
     min-height:100vh;
@@ -216,6 +166,7 @@ nav ul li a:hover{
   }
 /* Page four content*/
 .p-four{
+    width: auto;
     display: flex;
     background:rgb(0, 0, 0);
     background-size:cover;
@@ -233,6 +184,7 @@ nav ul li a:hover{
 }
 .p-four-second-text{
     height:100vh;
+    
     text-align: left;
     border-left: 2px dashed white;
 }
@@ -320,4 +272,51 @@ footer{
     margin-top:0;
     padding:0;
     background-color: rgb(255, 255, 255);
+}
+/* responsive */
+@media (max-width:576px) {
+    nav ul li{ 
+        display: none; 
+    }
+    .p-one-txt-one>p{
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 1s;
+    }
+    .p-one-txt-two ul{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .p-two,p-two-first,p-two-second{
+        height:50% !important;
+        width:200% !important;
+        flex-direction:column;
+    }
+    .p-two-first-text h1{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 1s;
+    }
+}
+@media (max-width:768px){
+    .p-four-first .image{ 
+        padding-left: 0% !important;
+    }
+}
+
+
+@media (min-width:576px) {
+    .custom-drop .custom-drop-btn{ 
+
+        display: none; 
+
+    }
+}
+@media (min-width:900px){
+    .cards{
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 1.5rem;
+    }
+    
 }
