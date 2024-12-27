@@ -12,27 +12,27 @@
   </head>
 <body>
 <!-- First page -->
-    <section class="p-one">
+    <section class="p-one" id="home">
         <div id="navigation-bar">
-            <div class="dropdown d-flex justify-content-center pt-3 custom-drop">
-                <button class="btn btn-secondary dropdown-toggle custom-drop-btn" type="button" id="book-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="dropdown d-flex justify-content-center p-3 custom-drop">
+                <button class="btn btn-secondary dropdown-toggle custom-drop-btn"  type="button" id="book-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="./Images/icons/menu.png" style="height:30px;"/>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark custom-dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li><a class="dropdown-item" href="#">About</a></li>
-                  <li><a class="dropdown-item" href="#">Projects</a></li>
-                  <li><a class="dropdown-item" href="#">Skills</a></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                <ul class="dropdown-menu dropdown-menu-dark custom-dropdown-menu" >
+                  <li><a class="dropdown-item" href="#home">Home</a></li>
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                  <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact</a></li>
                 </ul>
               </div>
             <nav class="custom-nav pt-3">
                 <ul class="d-flex justify-content-center align-items-center gap-4 list-unstyled">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
         </div>
@@ -50,7 +50,7 @@
         </div>
     </section>
 <!-- Second page -->
-    <section class="p-two d-flex col-12 p-0 m-0">
+    <section class="p-two d-flex col-12 p-0 m-0" id="about">
             <div class="p-two-first col-6">
                 <div class="p-two-first-text d-flex flex-column justify-content-center  align-items-center mx-5">
                     <div>
@@ -76,7 +76,7 @@
             </div>
     </section>
 <!-- Third page -->
-    <section class="p-three">
+    <section class="p-three" id="projects">
         <div class="p-three-container d-flex flex-column justify-content-center align-items-center">
           <div class="py-3">
             <h1>Projects</h1>
@@ -156,7 +156,7 @@
         </div>
       </section>
 <!-- Forth page -->
-    <section class="p-four">
+    <section class="p-four" id="skills">
       <div class="row d-flex">
         <div class="p-four-first col-12 col-md-6 ">
             <img class="image img-fluid" src="./Images/rubics cube.png" alt="rubics cube"/>
@@ -191,7 +191,7 @@
       </div>
     </section>
 <!-- Fifth page -->
-    <section class="p-five d-flex col-12 p-0 m-0">
+    <section class="p-five d-flex col-12 p-0 m-0" id="contact">
             <div class="p-five-text d-flex flex-column justify-content-center align-items-center col-12">
                 <div class="p-five-text col-12 glow">
                   <p>GET IN TOUCH</p>
