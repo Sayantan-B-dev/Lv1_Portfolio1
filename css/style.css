@@ -91,27 +91,15 @@ nav ul li a:hover{
 }
 /* Page two content */
 .p-two{
-/*     background:rgb(0, 0, 0); */
-    background-size:cover;
-    background-repeat: no-repeat;
-    min-height:100vh;
+    display: flex;
+    flex-direction: row;
+    height:100vh;
     color:white;
     font-family: "Modern Antiqua", serif;
     font-weight: 400;
     font-style: normal;
 }
-.p-two-first{
-    background-color: rgb(0, 0, 0);
-    height:100vh;
-    width:50vh;
-}
-.p-two-first-text{
-    height:100vh;
-}
-.p-two-first-text h1{
-    font-size: 10vh;
-}
-.p-two-second{
+.p-two-img{
     background-image: url(../Images/pattern.png);
     height:100vh;
     width:50vh;
@@ -119,15 +107,35 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+.p-two-text{
+    opacity: 0%;
+    height:100vh;
+    z-index: 1;
+    padding-top:10rem;
+}
 .profile{
     width:300px;
     max-width:100%;
     border-radius: 50%;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
-.profile:hover{
-    transform: scale(1.1);
+.p-two:hover .profile{ 
     box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    transform: scale(1.1);
+    filter: blur(5px);
+    transition: all 1s ease-in-out;
+}
+.p-two:hover .p-two-text{ 
+    opacity: 100;
+    padding:50px;
+    text-align: center;
+    text-shadow:0px 0px 10px rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+.info{
+    padding-left:50px;
+    padding-right: 50px;
 }
 /* Page three content NEED TO CHANGE THE PROJECTS*/
 .p-three{
@@ -167,52 +175,53 @@ nav ul li a:hover{
   }
 /* Page four content*/
 .p-four{
-    width: auto;
-    display: flex;
-    background:rgb(0, 0, 0);
+    background-image: url(../Images/4KNlOWFDGlP093lqpu.webp);
     background-size:cover;
     background-repeat: no-repeat;
-    min-height:100vh;
-    color:white;
-    font-family: "Unbounded", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left:0;
+    background-position: center center;
+    height:100vh;
+    display: flex;
+    justify-content: center;
     
 }
-.p-four-second{
-    background-color: rgb(0, 0, 0);
-    box-sizing:inherit; 
-    height:100vh;
+.p-four-text{
+    background-color: rgba(0, 0, 0, 0.747);
+    color:white;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    font-family: "Unbounded", serif;
+    height: 100vh;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 200;
+    position: absolute;
+
 }
-.p-four-second-text{
-    height:100vh; 
-    text-align: left;
+.skills{
+    width: 220px;
+    overflow:hidden;
+}
+.main_skill{
+    border-top:2px dashed white;
+    border-right: 2px dashed white;
+    padding: 5px;
+    margin-right: 10px;
+}
+.soft_skill{
+    border-bottom:2px dashed white;
+    padding: 5px;
     border-left: 2px dashed white;
 }
-.p-four-second-text h1{
-    font-size: 5vh;
+.p-four-text h2{
+    font-size: 3cqi;
 }
-.p-four-second-text ul li{
-    transition: text-shadow 0.5s ease-in-out;
-}
-.p-four-second-text:hover ul li{
-    text-shadow:0px 0px 15px  rgb(255, 255, 255);
-}
-.p-four-first{
-    border-radius: 5px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:50vh;
-    overflow: hidden;
-}
-.p-four-first .image{ 
-    padding-left: 4rem;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-.p-four-first:hover .image{
-    opacity: 50%;
+.p-four .p-four-text:hover .skills{
+    text-shadow:0px 0px 10px white;
+    transform: scale3d(1.09,1.09,1);
+    transition:all 1s ease-in-out;
 }
 /* Page five content*/
 .p-five{
@@ -276,7 +285,7 @@ footer{
     background-color: rgb(255, 255, 255);
 }
 /* responsive */
-@media (max-width:576px) {
+@media (max-width:578px) {
     nav ul li{ 
         display: none; 
     }
@@ -290,27 +299,21 @@ footer{
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .p-two,p-two-first,p-two-second{
-        height:50% !important;
-        width:200% !important;
-        flex-direction:column;
+    .p-two{
+        flex-direction:row;
+        flex-wrap: wrap;
     }
     .p-two-first-text h1{
         padding-top: 2rem;
         padding-bottom: 2rem;
         transition: 1s;
     }
-}
-@media (max-width:768px){
-    .p-four-first .image{ 
-        padding-left: 0% !important;
+    .skills h2{
+        font-size: 10cqi;
     }
 }
-
-
-@media (min-width:576px) {
+@media (min-width:578px) {
     .custom-drop .custom-drop-btn{ 
-        position:fixed;
         display: none; 
     }
 }
@@ -319,5 +322,10 @@ footer{
         grid-template-columns: 1fr 2fr 1fr;
         column-gap: 1.5rem;
     }
-    
 }
+@media (max-width:768px){
+    .p-four-first .image{ 
+        padding-left: 0% !important;
+    }
+}
+
