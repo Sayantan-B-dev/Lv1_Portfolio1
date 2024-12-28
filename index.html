@@ -50,30 +50,26 @@
         </div>
     </section>
 <!-- Second page -->
-    <section class="p-two d-flex col-12 p-0 m-0" id="about">
-            <div class="p-two-first col-6">
-                <div class="p-two-first-text d-flex flex-column justify-content-center  align-items-center mx-5">
-                    <div>
-                        <h1>
-                            About me
-                        </h1>
-                    </div>
-                    <div>
-                        <p>
-                            Hi, I’m Sayantan, a developer who loves
-                            coding and solving challenging problems. I
-                            enjoy creating efficient, user-friendly
-                            projects while constantly learning new
-                            skills. Outside of coding, I make music, read
-                            books, and stay updated with tech news to
-                            stay inspired.
-                        </p>
-                    </div>
-                </div>
+    <section  id="about">
+      <div class="p-two d-flex position-relative">
+            <div class="p-two-img col-12 position-absolute">
+              <img class="profile" src="./Images/profile.jpg" alt="profile picture"/>
             </div>
-            <div class="p-two-second col-6">
-                <img class="profile" src="./Images/profile.jpg" alt="profile picture"/>
+            <div class="p-two-text col-12 d-flex flex-column justify-content-center  align-items-center position-relative ">
+                    <p style="font-size:2rem;">
+                        About me
+                    </p>
+                    <p class="info" style="font-size:1rem;">
+                        Hi, I’m Sayantan, a developer who loves
+                        coding and solving challenging problems. I
+                        enjoy creating efficient, user-friendly
+                        projects while constantly learning new
+                        skills. Outside of coding, I make music, read
+                        books, and stay updated with tech news to
+                        stay inspired.
+                    </p>
             </div>
+      </div>
     </section>
 <!-- Third page -->
     <section class="p-three" id="projects">
@@ -157,36 +153,32 @@
       </section>
 <!-- Forth page -->
     <section class="p-four" id="skills">
-      <div class="row d-flex">
-        <div class="p-four-first col-12 col-md-6 ">
-            <img class="image img-fluid" src="./Images/rubics cube.png" alt="rubics cube"/>
+      <div class="p-four-text col-12">
+        <div class="skills main_skill">
+          <h2>
+              Main skills
+          </h2>
+          <ul>
+              <li>HTML</li><!-- &#x2022; -->
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <li>Python</li>
+              <li>Django</li>
+          </ul>
         </div>
-
-        <div class="p-four-second col-12 col-md-6">
-          <div class="p-four-second-text d-flex justify-content-center align-items-start flex-column px-5 py-6">
-            <h1>
-                Main skills
-            </h1>
-            <ul type="none">
-                <li>&#x2022;HTML</li>
-                <li>&#x2022;CSS</li>
-                <li>&#x2022;JavaScript</li>
-                <li>&#x2022;C</li>
-                <li>&#x2022;Python</li>
-                <li>&#x2022;Django</li>
-            </ul>
-            <h1>
-                Soft skills
-            </h1>
-            <ul type="none">
-                <li>&#x2022;Problem-Solving</li>
-                <li>&#x2022;Critical Thinking</li>
-                <li>&#x2022;Collaboration</li>
-                <li>&#x2022;Adaptability</li>
-                <li>&#x2022;Communication</li>
-                <li>&#x2022;Time Management</li>
-            </ul>
-          </div>
+        <div class="skills soft_skill">
+          <h2>
+              Soft skills
+          </h2>
+          <ul>
+              <li>Problem-Solving</li>
+              <li>Critical Thinking</li>
+              <li>Collaboration</li>
+              <li>Adaptability</li>
+              <li>Communication</li>
+              <li>Time Management</li>
+          </ul>
         </div>
       </div>
     </section>
